@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./style";
 import Icon from "./icon";
-import { useNavState } from "../../store/useNavState";
+import { useNavState } from "../../../store/useNavState";
 
 const Nav = () => {
   const { navState, setNavState } = useNavState();

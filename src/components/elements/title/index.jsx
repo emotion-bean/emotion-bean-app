@@ -1,5 +1,5 @@
 import * as S from "./style";
-import { useNavState } from "../../store/useNavState";
+import { useNavState } from "../../../store/useNavState";
 
 const Title = () => {
   const { navState } = useNavState();

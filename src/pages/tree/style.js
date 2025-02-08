@@ -11,3 +11,20 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
 `;
+
+export const OptionWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const IconWrapper = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+`;
+
+export const OptionIcon = styled.img`
+  width: 1.5rem;
+`;
