@@ -40,21 +40,21 @@ export const ImageContainer = styled.div`
   display: flex;
   width: 80%;
   min-height: 340px;
-  margin-left : 3rem;
-  margin-right : 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: white;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid #d9d9d9;
 `;
 
 export const MainImage = styled.img`
-  width: 90%;  
+  width: 90%;
   height: 290px;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 1rem;
 `;
 
@@ -71,5 +71,5 @@ export const Detail = styled.div`
   text-align: left;
   line-height: 1.4;
   color: #555;
-  white-space: pre-wrap;  // ✅ 줄바꿈 유지
+  white-space: pre-wrap;
 `;
