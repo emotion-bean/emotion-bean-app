@@ -1,16 +1,13 @@
 import * as S from "./style";
 import { useNavState } from "../../store/useNavState";
-import { useCalendarState } from "../../store/useCalendarState";
 const Start = () => {
   const { setNavState } = useNavState();
-  const { setCalendarState } = useCalendarState();
   return (
     <S.Container>
       <S.Logo src="/images/logo.svg" />
       <S.LoginWrapper
         onClick={() => {
-          setNavState("CALENDAR");
-          setCalendarState("CALENDAR");
+          setNavState("REGISTER");
         }}
       >
         <S.Kakao>
