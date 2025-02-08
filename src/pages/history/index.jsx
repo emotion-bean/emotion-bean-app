@@ -50,14 +50,14 @@ const History = () => {
       />
       <S.DateContainer>{historyData.date}</S.DateContainer>
       <S.ImageContainer>
-      <S.Icon src={emotionIcons[historyData.status]} />
-      <S.Title>{historyData.title}</S.Title>
+        <S.Icon src={emotionIcons[historyData.status]} />
+        <S.Title>{historyData.title}</S.Title>
         <S.MainImage src={historyData.img} alt="이미지 없음" />
         <S.Detail>{historyData.detail}</S.Detail>
       </S.ImageContainer>
       <S.CongContainer>
         <S.Icon src="/images/congcong.svg" />
-        <S.Title>콩콩이의 답변</S.Title>
+        <S.CongCongTitle>콩콩이의 답변</S.CongCongTitle>
         <S.Detail>
           {loading
             ? "GPT 응답을 불러오는 중..."

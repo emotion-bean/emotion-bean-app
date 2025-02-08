@@ -65,12 +65,15 @@ export const MainImage = styled.img`
 
 export const Title = styled.div`
   background-color: #fee1e1;
-  padding-left: 0.1rem;
-  padding-right: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   font-size: 1.2rem;
-  width: 80%;
   text-align: center;
   font-weight: bold;
+`;
+
+export const CongCongTitle = styled(Title)`
+  background-color: #e6fbe2;
 `;
 
 export const Detail = styled.div`
