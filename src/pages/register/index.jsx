@@ -13,8 +13,6 @@ const Register = () => {
           onClick={() => setNavState("START")}
         />
         <S.Title>회원가입</S.Title>
-        {/* setNavState("CALENDAR");
-                setCalendarState("CALENDAR"); */}
       </S.TopWrapper>
       <S.FixProfile src="/images/editprofile.svg" />
       <S.InputContainer>

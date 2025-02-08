@@ -3,7 +3,6 @@ import { useNavState } from "../../store/useNavState";
 
 const Start = () => {
   const { setNavState } = useNavState();
-
   return (
     <S.Container>
       <S.Logo src="/images/logo.svg" />
