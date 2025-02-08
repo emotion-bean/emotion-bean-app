@@ -38,34 +38,34 @@ const History = () => {
     console.log("GPT 응답:", data);
     setGptResponse(data);
     setLoading(false);
-
-    if (!historyData) return <p>데이터 없음</p>;
-
-    return (
-      <S.Container>
-        <S.Arrow
-          src="/images/prevarrow.svg"
-          onClick={() => setNavState("CALENDAR")}
-        />
-        <S.DateContainer>{historyData.date}</S.DateContainer>
-        <S.Icon src={emotionIcons[historyData.status]} />
-        <S.ImageContainer>
-          <S.MainImage src={historyData.img} alt="이미지 없음" />
-          <S.Title>{historyData.title}</S.Title>
-        </S.ImageContainer>
-        <S.Detail>{historyData.detail}</S.Detail>
-        <S.ImageContainer>
-          <S.Icon src="/images/congcong.svg" />
-          <S.Title>앱잼에서의 하루</S.Title>
-          {/* 로딩 중일 때와 응답이 있을 때 분기 */}
-          <S.Detail>
-            {loading
-              ? "GPT 응답을 불러오는 중..."
-              : gptResponse || "응답이 없습니다."}
-          </S.Detail>
-        </S.ImageContainer>
-      </S.Container>
-    );
   };
+
+  if (!historyData) return <p>데이터 없음</p>;
+
+  return (
+    <S.Container>
+      <S.Arrow
+        src="/images/prevarrow.svg"
+        onClick={() => setNavState("CALENDAR")}
+      />
+      <S.DateContainer>{historyData.date}</S.DateContainer>
+      <S.Icon src={emotionIcons[historyData.status]} />
+      <S.ImageContainer>
+        <S.MainImage src={historyData.img} alt="이미지 없음" />
+        <S.Title>{historyData.title}</S.Title>
+      </S.ImageContainer>
+      <S.Detail>{historyData.detail}</S.Detail>
+      <S.ImageContainer>
+        <S.Icon src="/images/congcong.svg" />
+        <S.Title>콩콩이의 답변</S.Title>
+        <S.Detail>
+          {loading
+            ? "GPT 응답을 불러오는 중..."
+            : gptResponse || "응답이 없습니다."}
+        </S.Detail>
+      </S.ImageContainer>
+    </S.Container>
+  );
 };
+
 export default History;
