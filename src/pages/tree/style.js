@@ -29,6 +29,16 @@ export const OptionIcon = styled.img`
   width: 1.5rem;
 `;
 
+export const TreeContainer = styled.div`
+  width: 90vw;
+  height: 90vw;
+  position: relative;
+`;
+
 export const Tree = styled.img`
   width: 90vw;
+`;
+
+export const Peach = styled.img`
+  position: absolute;
 `;

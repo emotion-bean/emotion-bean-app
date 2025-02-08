@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
 export const useNavState = create((set) => ({
-  navState: "CALENDAR",
+  navState: "START",
   setNavState: (val) => set(() => ({ navState: val })),
 }));

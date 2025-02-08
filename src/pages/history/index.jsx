@@ -22,7 +22,7 @@ const History = ({ date, status, img, detail, title }) => {
         }
       />
       <S.ImageContainer>
-        <S.MainImage src={img} alt="이미지 없음"/>
+        <S.MainImage src={img} alt="이미지 없음" />
         <S.Title>{title}</S.Title>
       </S.ImageContainer>
       <S.Detail>{detail}</S.Detail>

@@ -5,13 +5,17 @@ import Profile from "./pages/profile";
 import Tree from "./pages/tree";
 import Write from "./pages/write";
 import History from "./pages/history";
+import Start from "./pages/start";
 
 function App() {
   const { navState } = useNavState();
   const { calendarState } = useCalendarState();
-  return navState === "CALENDAR" ? (
+
+  return navState === "START" ? (
+    <Start />
+  ) : navState === "CALENDAR" ? (
     calendarState === "CALENDAR" ? (
-      <History />
+      <Calendar />
     ) : (
       <Tree />
     )
