@@ -104,20 +104,35 @@ const Calendar = () => {
               if (view === "month") {
                 const formattedDate = format(date, "yyyy-MM-dd");
                 const diaryEntry = diaryData[formattedDate];
-
+            
                 return (
                   diaryEntry && (
-                    <div onClick={() => handleDateClick(date)} style={{ cursor: "pointer" }}>
+                    <div 
+                      onClick={() => handleDateClick(date)} 
+                      style={{ 
+                        position: "relative", 
+                        display: "flex", 
+                        justifyContent: "center", 
+                        alignItems: "center"
+                      }}
+                    >
                       <img
                         src={emotionIcons[diaryEntry.emotion]}
                         alt={diaryEntry.emotion}
-                        style={{ width: 20, height: 20, marginTop: 5 }}
+                        style={{ 
+                          width: 30, 
+                          height: 30, 
+                          position: "absolute", 
+                          bottom: "20px" // 날짜 위에 정렬
+                        }}
                       />
                     </div>
                   )
                 );
               }
             }}
+            
+            
           />
         </S.StyledCalendarWrapper>
       </S.CalendarContainer>

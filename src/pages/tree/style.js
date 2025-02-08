@@ -13,6 +13,7 @@ export const Container = styled.div`
 `;
 
 export const OptionWrapper = styled.div`
+  margin-top:1.5rem;
   width: 100%;
   display: flex;
   justify-content: center;

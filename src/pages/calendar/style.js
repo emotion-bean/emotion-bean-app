@@ -13,6 +13,7 @@ export const Container = styled.div`
 `;
 
 export const OptionWrapper = styled.div`
+  margin-top:1.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -30,7 +31,7 @@ export const OptionIcon = styled.img`
 `;
 
 export const CalendarContainer = styled.div`
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: center;
 `;
@@ -40,10 +41,10 @@ export const StyledCalendarWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 90%;
 
   .react-calendar {
-    width: 80%;
+    width: 90%;
     border: none;
     display: flex;
     flex-direction: column;
@@ -54,7 +55,7 @@ export const StyledCalendarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   .react-calendar__navigation button:enabled {
@@ -68,15 +69,15 @@ export const StyledCalendarWrapper = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
   }
 
   /* 요일 */
   .react-calendar__month-view__weekdays {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     width: 100%; /* 전체 너비를 지정하여 날짜와 맞게 조정 */
   }
 
@@ -85,7 +86,7 @@ export const StyledCalendarWrapper = styled.div`
     font-weight: bold;
     color: black;
     flex: 1; /* 각 요일을 동일하게 정렬 */
-    font-size: 1rem; /* 요일 글씨 크기 조정 */
+    font-size: 1.4rem; /* 요일 글씨 크기 조정 */
     padding: 0.5rem 0; /* 위 아래 여백 추가 */
   }
 
@@ -94,11 +95,11 @@ export const StyledCalendarWrapper = styled.div`
     background-color: transparent;
     color: black;
     border: none;
-    font-size: 1rem; /* 날짜 글씨 크기 */
+    font-size: 1.2rem; /* 날짜 글씨 크기 */
     padding: 0;
     margin: 0;
     width: 100%; /* 버튼을 가득 채워서 일정하게 만듬 */
-    height: 50px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
