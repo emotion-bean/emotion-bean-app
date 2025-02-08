@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -13,6 +13,14 @@ export const Container = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
   gap: 1.3rem;
+  position: relative;
+`;
+
+export const Arrow = styled.img`
+  position: absolute;
+  width: 0.7rem;
+  top: 2rem;
+  left: 2rem;
 `;
 
 export const DateContainer = styled.div`
