@@ -28,3 +28,7 @@ export const IconWrapper = styled.div`
 export const OptionIcon = styled.img`
   width: 1.5rem;
 `;
+
+export const Tree = styled.img`
+  width: 90vw;
+`;

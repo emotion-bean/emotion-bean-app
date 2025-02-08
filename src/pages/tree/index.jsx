@@ -16,6 +16,7 @@ const Tree = () => {
           />
         </S.IconWrapper>
       </S.OptionWrapper>
+      <S.Tree src="/images/tree.svg" />
       <Nav />
     </S.Container>
   );

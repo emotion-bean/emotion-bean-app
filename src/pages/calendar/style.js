@@ -43,7 +43,7 @@ export const StyledCalendarWrapper = styled.div`
   height: 100%;
 
   .react-calendar {
-    width: 70%;
+    width: 80%;
     border: none;
     display: flex;
     flex-direction: column;
