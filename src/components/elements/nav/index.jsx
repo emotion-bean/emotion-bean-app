@@ -16,9 +16,6 @@ const Nav = () => {
       <S.Button onClick={() => setNavState("RANKING")}>
         <Icon type="ranking" active={navState === "RANKING"} />
       </S.Button>
-      <S.Button onClick={() => setNavState("PROFILE")}>
-        <Icon type="profile" active={navState === "PROFILE"} />
-      </S.Button>
     </S.Container>
   );
 };
