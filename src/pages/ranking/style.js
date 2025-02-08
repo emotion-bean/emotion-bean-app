@@ -24,17 +24,17 @@ export const RankingWrapper = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
 `;
 
 export const RankingBox = styled.div`
   display: flex;
-  height: 3rem;
+  height: 5rem;
   width: 90%;
   border-bottom: 0.1rem solid #d9d9d9;
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: white;
   align-items: center;
 `;
 

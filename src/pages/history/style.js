@@ -39,7 +39,7 @@ export const Icon = styled.img`
 export const ImageContainer = styled.div`
   display: flex;
   width: 80%;
-  min-height: 460px;
+  min-height: 550px;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 2rem;
