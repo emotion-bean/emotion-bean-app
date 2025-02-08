@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "Yeonji";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_11@1.0/Yunji.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Yeonji", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto";
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

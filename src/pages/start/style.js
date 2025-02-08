@@ -43,6 +43,14 @@ export const LoginImage = styled.img`
 `;
 
 export const LoginText = styled.div`
+  @font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  font-family: "Pretendard";
   width: 100%;
   display: flex;
   justify-content: center;

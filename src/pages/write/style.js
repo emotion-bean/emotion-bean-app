@@ -122,6 +122,14 @@ export const Uploader = styled.div`
 `;
 
 export const ConfirmButton = styled.div`
+  @font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  font-family: "Pretendard";
   width: 90%;
   border-radius: 1.2rem;
   padding-top: 1rem;
