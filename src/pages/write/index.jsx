@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import axios from "axios"; 
 import * as S from "./style";
 import FeelCard from "../../components/elements/feelcard";
+import { useNavState } from "../../store/useNavState";
 
 const Write = () => {
+  const { setNavState } = useNavState();
   const [image, setImage] = useState(null);
   const [status, setStatus] = useState("");
   const [title, setTitle] = useState("");
@@ -56,6 +58,10 @@ const Write = () => {
 
   return (
     <S.Container>
+      <S.Arrow
+        src="/images/prevarrow.svg"
+        onClick={() => setNavState("CALENDAR")}
+      />
       <S.DateContainer>{formattedDate}</S.DateContainer>
       <S.FeelContainer>
         <S.FeelText>오늘은 어떤 기분이었나요?</S.FeelText>
