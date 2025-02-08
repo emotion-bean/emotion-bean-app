@@ -53,9 +53,9 @@ const History = () => {
       <S.ImageContainer>
         <S.MainImage src={historyData.img} alt="이미지 없음" />
         <S.Title>{historyData.title}</S.Title>
+        <S.Detail>{historyData.detail}</S.Detail>
       </S.ImageContainer>
-      <S.Detail>{historyData.detail}</S.Detail>
-      <S.ImageContainer>
+      <S.CongContainer>
         <S.Icon src="/images/congcong.svg" />
         <S.Title>콩콩이의 답변</S.Title>
         <S.Detail>
@@ -63,7 +63,7 @@ const History = () => {
             ? "GPT 응답을 불러오는 중..."
             : gptResponse || "응답이 없습니다."}
         </S.Detail>
-      </S.ImageContainer>
+      </S.CongContainer>
     </S.Container>
   );
 };

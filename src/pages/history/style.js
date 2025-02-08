@@ -52,6 +52,10 @@ export const ImageContainer = styled.div`
   border: 0.1rem solid #d9d9d9;
 `;
 
+export const CongContainer = styled(ImageContainer)`
+  border: 0.1rem solid #c9a7a7;
+`;
+
 export const MainImage = styled.img`
   width: 90%;
   height: 290px;
@@ -60,6 +64,9 @@ export const MainImage = styled.img`
 `;
 
 export const Title = styled.div`
+  background-color: #fee1e1;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
   font-size: 1.2rem;
   width: 80%;
   text-align: left;
@@ -69,6 +76,7 @@ export const Title = styled.div`
 export const Detail = styled.div`
   margin-top: 1rem;
   width: 80%;
+  padding-bottom: 1rem;
   font-size: 1.3rem;
   text-align: left;
   line-height: 1.4;
