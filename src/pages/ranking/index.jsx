@@ -10,7 +10,7 @@ const Ranking = () => {
     const fetchRanking = async () => {
       try {
         const response = await axios.get("http://localhost:3000/users/ranking");
-        setRankingData(response.data); 
+        setRankingData(response.data);
       } catch (error) {
         console.error("랭킹 데이터 오류", error);
       }
@@ -27,7 +27,8 @@ const Ranking = () => {
           <S.RankingBox key={user._id} rank={index + 1}>
             <S.InfoBox>
               <S.Rank rank={index + 1}>{index + 1}</S.Rank>
-              {user.name}{}
+              {user.name}
+              {}
             </S.InfoBox>
             {user.count}일
           </S.RankingBox>

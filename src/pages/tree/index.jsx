@@ -35,7 +35,7 @@ const Tree = () => {
       </S.OptionWrapper>
       <S.TreeContainer>
         <S.Tree src="/images/tree.svg" />
-        {locateList.map((locate, index) => (
+        {/* {locateList.map((locate, index) => (
           <S.Peach
             key={index}
             src="/images/yellow_peach.svg"
@@ -44,7 +44,7 @@ const Tree = () => {
               left: `${locate[1]}%`,
             }}
           />
-        ))}
+        ))} */}
       </S.TreeContainer>
       <Nav />
     </S.Container>

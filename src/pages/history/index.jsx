@@ -60,7 +60,7 @@ const History = () => {
         <S.CongCongTitle>콩콩이의 답변</S.CongCongTitle>
         <S.Detail>
           {loading
-            ? "GPT 응답을 불러오는 중..."
+            ? "콩콩이가 답변을 작성 중입니다"
             : gptResponse || "응답이 없습니다."}
         </S.Detail>
       </S.CongContainer>
