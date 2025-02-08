@@ -11,7 +11,3 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
 `;
-
-export const Title = styled.div`
-  font-size: 3rem;
-`;
