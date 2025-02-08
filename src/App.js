@@ -6,6 +6,7 @@ import Write from "./pages/write";
 import History from "./pages/history";
 import Start from "./pages/start";
 import Register from "./pages/register";
+import Ranking from "./pages/ranking";
 
 function App() {
   const { navState } = useNavState();
@@ -15,6 +16,8 @@ function App() {
     <Start />
   ) : navState === "REGISTER" ? (
     <Register />
+  ) : navState === "RANKING" ? (
+    <Ranking />
   ) : navState === "HISTORY" ? (
     <History />
   ) : navState === "CALENDAR" ? (

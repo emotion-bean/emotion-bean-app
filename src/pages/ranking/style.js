@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
   background-image: url("/images/background.svg");
@@ -13,6 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
+  font-size: 2.5rem;
   width: 90%;
   top: 2rem;
   left: 2rem;
@@ -25,9 +27,15 @@ export const RankingWrapper = styled.div`
 `;
 
 export const RankingBox = styled.div`
-  width: 100%;
+  display: flex;
+  height: 3rem;
+  width: 90%;
   border-bottom: 0.1rem solid #d9d9d9;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+  align-items: center;
 `;
 
 export const Rank = styled.div`
