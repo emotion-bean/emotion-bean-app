@@ -104,9 +104,11 @@ const Calendar = () => {
               if (view === "month") {
                 const formattedDate = format(date, "yyyy-MM-dd");
                 const diaryEntry = diaryData[formattedDate];
+                const today = new Date();
+                const isPastOrToday = date <= today; // 오늘 날짜 이전만 표시
             
                 return (
-                  diaryEntry && (
+                  isPastOrToday && (
                     <div 
                       onClick={() => handleDateClick(date)} 
                       style={{ 
@@ -117,13 +119,13 @@ const Calendar = () => {
                       }}
                     >
                       <img
-                        src={emotionIcons[diaryEntry.emotion]}
-                        alt={diaryEntry.emotion}
+                        src={diaryEntry ? emotionIcons[diaryEntry.emotion] : "images/no_peach.svg"}
+                        alt={diaryEntry ? diaryEntry.emotion : "일기 없음"}
                         style={{ 
-                          width: 30, 
-                          height: 30, 
+                          width: 31, 
+                          height: 31, 
                           position: "absolute", 
-                          bottom: "20px" // 날짜 위에 정렬
+                          bottom: "17px" // 날짜 위에 정렬
                         }}
                       />
                     </div>
@@ -131,8 +133,7 @@ const Calendar = () => {
                 );
               }
             }}
-            
-            
+                   
           />
         </S.StyledCalendarWrapper>
       </S.CalendarContainer>

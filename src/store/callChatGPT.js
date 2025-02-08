@@ -16,7 +16,7 @@ export const CallGPT = async (detail) => {
         messages: [
           {
             role: "user",
-            content: `다음 내용을 분석하고 요약해줘: "${detail}"`,
+            content: `다음 내용을 읽은 다음, 공감과 조언을 해줘.: "${detail}"`,
           },
         ],
         temperature: 0.5,

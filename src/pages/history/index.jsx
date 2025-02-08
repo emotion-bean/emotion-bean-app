@@ -49,10 +49,10 @@ const History = () => {
         onClick={() => setNavState("CALENDAR")}
       />
       <S.DateContainer>{historyData.date}</S.DateContainer>
-      <S.Icon src={emotionIcons[historyData.status]} />
       <S.ImageContainer>
+      <S.Icon src={emotionIcons[historyData.status]} />
+      <S.Title>{historyData.title}</S.Title>
         <S.MainImage src={historyData.img} alt="이미지 없음" />
-        <S.Title>{historyData.title}</S.Title>
         <S.Detail>{historyData.detail}</S.Detail>
       </S.ImageContainer>
       <S.CongContainer>

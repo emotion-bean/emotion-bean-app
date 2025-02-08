@@ -39,7 +39,7 @@ export const Icon = styled.img`
 export const ImageContainer = styled.div`
   display: flex;
   width: 80%;
-  min-height: 340px;
+  min-height: 460px;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 2rem;
@@ -65,18 +65,17 @@ export const MainImage = styled.img`
 
 export const Title = styled.div`
   background-color: #fee1e1;
-  padding-left: 0.3rem;
+  padding-left: 0.1rem;
   padding-right: 0.3rem;
   font-size: 1.2rem;
   width: 80%;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 `;
 
 export const Detail = styled.div`
   margin-top: 1rem;
   width: 80%;
-  padding-bottom: 1rem;
   font-size: 1.3rem;
   text-align: left;
   line-height: 1.4;

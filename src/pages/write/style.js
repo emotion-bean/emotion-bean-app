@@ -35,8 +35,8 @@ export const StyleContainer = styled.div`
   background-color: white;
   border: 0.1rem solid #f6f6f6;
   border-radius: 1.2rem;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   flex-direction: column;
 `;
 
@@ -56,7 +56,7 @@ export const FeelText = styled.div`
 `;
 
 export const TextContainer = styled(StyleContainer)`
-  display: flex;
+  
   align-items: flex-start;
 `;
 
