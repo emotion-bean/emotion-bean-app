@@ -13,6 +13,8 @@ function App() {
 
   return navState === "START" ? (
     <Start />
+  ) : navState === "HISTORY" ? ( // ✅ HISTORY 상태 추가
+    <History />
   ) : navState === "CALENDAR" ? (
     calendarState === "CALENDAR" ? (
       <Calendar />

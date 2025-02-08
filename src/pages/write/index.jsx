@@ -18,7 +18,7 @@ const Write = () => {
     day: "numeric",
   });
 
-  const email = "user@example.com";   // 임의로 설정함
+  const email = "test@example.com";   // 임의로 설정함
 
   const handleImageUpload = (e) => {
     const { files } = e.target;
