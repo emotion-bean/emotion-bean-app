@@ -42,6 +42,7 @@ export const ImageContainer = styled.div`
   min-height: 340px;
   margin-left: 3rem;
   margin-right: 3rem;
+  margin-top: 2rem;
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: white;
@@ -66,8 +67,9 @@ export const Title = styled.div`
 `;
 
 export const Detail = styled.div`
+  margin-top: 1rem;
   width: 80%;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   text-align: left;
   line-height: 1.4;
   color: #555;

@@ -36,7 +36,7 @@ export const Title = styled.div`
   }
   font-family: "Pretendard";
   position: absolute;
-  width: 90%;
+  width: 100%;
   display: flex;
   top: 2rem;
   justify-content: center;
@@ -56,6 +56,7 @@ export const InputContainer = styled.div`
 `;
 
 export const InputTitle = styled.div`
+margin-bottom:1rem;
   @font-face {
     font-family: "Pretendard-Regular";
     src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -78,6 +79,7 @@ export const Input = styled.input`
   font-family: "Pretendard";
   height: 2.5rem;
   padding-left: 1rem;
+  padding-
 `;
 
 export const ConfirmButton = styled.div`
