@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios"; 
 import * as S from "./style";
 import FeelCard from "../../components/elements/feelcard";
 import { useNavState } from "../../store/useNavState";
@@ -17,12 +18,41 @@ const Write = () => {
     day: "numeric",
   });
 
+  const email = "user@example.com";   // 임의로 설정함
+
   const handleImageUpload = (e) => {
     const { files } = e.target;
     const uploadFile = files[0];
     if (uploadFile) {
       const reader = new FileReader();
+      reader.onloadend = () => {
+        setImgLink(reader.result); // base64 인코딩
+        setImage(reader.result);
+      };
       reader.readAsDataURL(uploadFile);
+    }
+  };
+
+  const handleSubmit = async () => {
+
+    const diaryData = {
+      email,
+      title,
+      content: detail,
+      image: imglink, // base64 이미지
+      createdAt: formattedDate,
+      emotion: status,
+    };
+
+    try {
+      const response = await axios.post("http://localhost:3000/diary/upload", diaryData);
+      if (response.data.success) {
+        console.log("일기 저장")
+      } else {
+        console.log("일기 저장 실패")
+      }
+    } catch (error) {
+      console.error("업로드 에러:", error);
     }
   };
 
@@ -102,7 +132,7 @@ const Write = () => {
           />
         </S.ImageContainer>
       </S.ImageUploader>
-      <S.ConfirmButton isDone={status && title && detail}>완료</S.ConfirmButton>
+      <S.ConfirmButton isDone={status && title && detail} onClick={handleSubmit}>완료</S.ConfirmButton>
     </S.Container>
   );
 };
